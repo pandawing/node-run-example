@@ -1,3 +1,3 @@
 'use strict';
 module.exports.prepare = require('./lib/prepare');
-module.exports.runExample = require('./lib/runExample');
+module.exports.runExample = require('./lib/run-example');
