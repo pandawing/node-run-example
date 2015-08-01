@@ -19,6 +19,14 @@ var cli = meow({
     'Options',
     '  --foo  Lorem ipsum. Default: false'
   ]
-});
+},
+  {
+    default: {
+      info: true,
+      verbose: false,
+      debug: false
+    }
+  }
+);
 
-console.log(runExample(cli.input[0] || 'unicorns'));
+runExample.prepare(cli.input[0] || 'example/example.js', cli.flags);
