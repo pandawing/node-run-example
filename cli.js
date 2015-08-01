@@ -24,9 +24,14 @@ var cli = meow({
     default: {
       info: true,
       verbose: false,
-      debug: false
+      debug: false,
+      'only-prepare': false
     }
   }
 );
 
 runExample.prepare(cli.input[0] || 'example/example.js', cli.flags);
+if (cli.flags.onlyPrepare) {
+  return;
+}
+runExample.runExample(cli.input[0] || 'example/example.js', cli.flags);
