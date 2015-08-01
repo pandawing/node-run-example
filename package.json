@@ -10,7 +10,10 @@
   "bin": "cli.js",
   "dependencies": {
     "es6-promise": "^2.3.0",
+    "is-directory": "^0.3.0",
+    "is-file": "^1.0.0",
     "meow": "^3.3.0",
+    "mkdirp": "^0.5.1",
     "pretty-format": "^1.2.0",
     "remove-trailing-path-separator": "^1.0.1",
     "winston": "^1.0.1"
