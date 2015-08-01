@@ -9,6 +9,7 @@
   },
   "bin": "cli.js",
   "dependencies": {
+    "es6-promise": "^2.3.0",
     "meow": "^3.3.0",
     "pretty-format": "^1.2.0",
     "remove-trailing-path-separator": "^1.0.1",
